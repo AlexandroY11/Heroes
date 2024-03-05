@@ -1,0 +1,33 @@
+/* Estilos para las tarjetas */
+.card {
+    width: 18rem; /* Tamaño inicial de la tarjeta */
+    margin: 10px; /* Espaciado entre las tarjetas */
+    transition: all 0.3s ease; /* Transición suave para las propiedades que cambian */
+}
+
+/* Estilos para la imagen de la tarjeta */
+.card-img-top {
+    height: 200px; /* Altura fija para la imagen */
+    object-fit: cover; /* Ajustar la imagen al contenedor */
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+    font-size: 1.25rem; /* Tamaño del título */
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+    padding: 1rem; /* Espaciado interno del cuerpo */
+}
+
+/* Animación de hover para agrandar la tarjeta */
+.card:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al 105% en hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave en hover */
+}
+
+/* Animación de hover para cambiar el color de fondo del título */
+.card-title:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo semitransparente en hover */
+}
