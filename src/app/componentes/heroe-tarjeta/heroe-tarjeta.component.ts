@@ -8,6 +8,6 @@ import { heroe } from '../../interfaces/heroe.interface';
   styleUrls: ['./heroe-tarjeta.component.css']
 })
 export class HeroeTarjetaComponent {
-  @Input() heroe: any={}; 
-  
+  // @Input() heroe: any={}; 
+  @Input() heroe!: heroe;
 }
