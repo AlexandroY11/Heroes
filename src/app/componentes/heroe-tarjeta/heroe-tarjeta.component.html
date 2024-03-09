@@ -1,12 +1,15 @@
 <!-- heroe-tarjeta.component.html -->
-<div class="col">
-    <div class="card">
-        <img [src]="heroe.img" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title text-center">{{heroe.nombre}}</h5>
-            <p class="card-text">{{heroe.bio}}</p>
-            <p class="card-text"><strong>Aparición:</strong> {{heroe.aparicion}}</p>
-            <p class="card-text"><strong>Casa: </strong>{{heroe.casa}}</p>
+
+<div class="card">
+    <img [src]="heroe.img" class="card-img-top" alt="img de {{heroe.nombre}}">
+    <div class="card-body">
+        <h5 class="card-title text-center">{{heroe.nombre}}</h5>
+        <p class="card-text">{{heroe.bio}}</p>
+        <p class="card-text"><strong>Aparición:</strong> {{heroe.aparicion}}</p>
+        <p class="card-text"><strong>Casa: </strong>{{heroe.casa}}</p>
+        <div class="row">
+            <button class="btn btn-primary col-md-5" style="margin-right: 10px;">Ver Más</button>
+            <button class="btn btn-warning col-md-5 mb-1 mb-md-0">Ver Fotos</button>
         </div>
     </div>
 </div>
