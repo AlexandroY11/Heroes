@@ -5,12 +5,12 @@
     max-width: 300px;
     margin: 20px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para transformar y sombra */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
     cursor: pointer;
-    transform: translateY(-5px); /* Cambio de posición al pasar el cursor */
-    box-shadow: 0 6px 8px rgba(225, 224, 224, 0.7); /* Cambio de sombra al pasar el cursor */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(225, 224, 224, 0.7); 
 }
