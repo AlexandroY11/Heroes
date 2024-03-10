@@ -10,5 +10,5 @@ import { fotosHeroe } from '../../interfaces/fotos-heroe';
   styleUrls: ['./fotos-tarjeta.component.css']
 })
 export class FotosTarjetaComponent {
-  @Input() foto: fotosHeroe | undefined;
+  @Input() foto: fotosHeroe = { id: 0, idHeroe: 0, nombreHeroe: '', url: '' };
 }
