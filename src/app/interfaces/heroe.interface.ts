@@ -3,6 +3,6 @@ export interface heroe {
     bio: string;
     aparicion: string;
     casa: string;
-    id?: number;
+    id: number;
     img: string;
 };
