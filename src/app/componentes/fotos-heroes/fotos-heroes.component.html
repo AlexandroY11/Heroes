@@ -1,0 +1,11 @@
+<!-- fotos-heroes.component.html -->
+<div class="container">
+    <h1 class="text-center"><strong>Galeria de Fotos</strong></h1>
+    <div class="row">
+        <div *ngFor="let foto of fotosHeroes; let i = index" class="col">
+            <app-fotos-tarjeta [foto]="foto"></app-fotos-tarjeta>
+        </div>
+    </div>
+</div>
+
+<p>hola</p>

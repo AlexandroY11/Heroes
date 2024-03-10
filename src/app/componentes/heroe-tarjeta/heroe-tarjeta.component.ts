@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { heroe } from '../../interfaces/heroe.interface';
 
 @Component({
@@ -10,4 +11,13 @@ import { heroe } from '../../interfaces/heroe.interface';
 export class HeroeTarjetaComponent {
   // @Input() heroe: any={}; 
   @Input() heroe!: heroe;
+
+  constructor(private router: Router) {
+  }
+
+
+  verHeroe(id:number) {
+    this.router.navigate(['/fotos', id]);
+  }
+
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { heroe } from '../../interfaces/heroe.interface';
 
 @Component({
   selector: 'app-heroe',
