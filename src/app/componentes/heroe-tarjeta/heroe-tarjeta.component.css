@@ -1,33 +1,51 @@
-/* Estilos para las tarjetas */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 .card {
-    width: 18rem; /* Tamaño inicial de la tarjeta */
-    margin: 10px; /* Espaciado entre las tarjetas */
-    transition: all 0.3s ease; /* Transición suave para las propiedades que cambian */
+    width: 18rem;
+    margin: 10px;
+    transition: all 0.3s ease;
+    height: auto;
+    min-height: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Estilos para la imagen de la tarjeta */
 .card-img-top {
-    height: 200px; /* Altura fija para la imagen */
-    object-fit: cover; /* Ajustar la imagen al contenedor */
+    height: 200px;
+    object-fit: cover;
 }
 
-/* Estilos para el título de la tarjeta */
 .card-title {
-    font-size: 1.25rem; /* Tamaño del título */
+    font-size: 1.25rem;
 }
 
-/* Estilos para el cuerpo de la tarjeta */
 .card-body {
-    padding: 1rem; /* Espaciado interno del cuerpo */
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Animación de hover para agrandar la tarjeta */
 .card:hover {
-    transform: scale(1.05); /* Aumentar el tamaño al 105% en hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave en hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Animación de hover para cambiar el color de fondo del título */
 .card-title:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo semitransparente en hover */
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
+.bio {
+    max-height: 100px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.botones-centrados {
+    align-items: center; 
+    justify-content: center;
+}
+
