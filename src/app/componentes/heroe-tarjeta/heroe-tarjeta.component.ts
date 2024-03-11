@@ -15,8 +15,11 @@ export class HeroeTarjetaComponent {
   constructor(private router: Router) {
   }
 
+  verHeroe(id:number){
+    this.router.navigate(['/heroe', id]);
+  }
 
-  verHeroe(id:number) {
+  verFotosHeroe(id:number) {
     this.router.navigate(['/fotos', id]);
   }
 
