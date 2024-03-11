@@ -122,6 +122,24 @@ export class FotosHeroeService {
       nombreHeroe: "Hombre Araña",
       url: "https://i.ebayimg.com/thumbs/images/g/MSIAAOSwAeFhxRSP/s-l640.jpg",
     },
+    {
+      id: 19,
+      idHeroe: 7,
+      nombreHeroe: "Wolverine",
+      url: "https://i.pinimg.com/474x/77/eb/92/77eb9232d4f2301d7a74add6567b52bf.jpg",
+    },
+    {
+      id: 20,
+      idHeroe: 7,
+      nombreHeroe: "Wolverine",
+      url: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/68afb6fa-e011-4c0e-b0b2-a1426fc7787a/d5fvozy-0a19b0e9-e898-44b7-9809-4ee3d632ea53.jpg/v1/fit/w_600,h_900,q_70,strp/the_wolverine__2013__movie_poster_by_dcomp_d5fvozy-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvNjhhZmI2ZmEtZTAxMS00YzBlLWIwYjItYTE0MjZmYzc3ODdhXC9kNWZ2b3p5LTBhMTliMGU5LWU4OTgtNDRiNy05ODA5LTRlZTNkNjMyZWE1My5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.v9d88mb-wcvrxigyP8LYOzy0G-Qd_W017DFy5bLTNGk",
+    },
+    {
+      id: 21,
+      idHeroe: 7,
+      nombreHeroe: "Wolverine",
+      url: "https://www.postergully.com/cdn/shop/products/PG23_Copy_dd1820e2-466e-4767-889f-5d2a79b54c71.jpg?v=1578633585",
+    },
   ]
 
   getFotosHeroes():fotosHeroe[]{
