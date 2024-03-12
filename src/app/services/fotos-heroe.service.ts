@@ -146,25 +146,9 @@ export class FotosHeroeService {
     return this.fotosHeroe;
 
   }
-  getFotoHeroe(idx: number){
-    console.log(idx)
-    let fotosHeroe: fotosHeroe[] = [];
-    let NombreHeroe = "";
-    for (let i = 0; i < this.fotosHeroe.length; i++) {
-      let heroe = this.fotosHeroe[i];
-      console.log(heroe);
-      let id = heroe.idHeroe;
-      console.log(id);
-      console.log(idx);
-      if (idx === id) { // Usar === para comparar estrictamente
-        console.log('entre');
-        console.log(heroe);
-        NombreHeroe = heroe.nombreHeroe;
-        fotosHeroe.push(heroe);
-      }
-    }
-    return fotosHeroe;
-  }
   
+  getFotoHeroe(idHeroe: number): fotosHeroe[] {
+    return this.fotosHeroe.filter(foto => foto.idHeroe === idHeroe);
+  }
 
 }

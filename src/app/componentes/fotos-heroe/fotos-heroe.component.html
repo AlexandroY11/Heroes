@@ -1,9 +1,13 @@
-<div class="container text-center">
-    <div class="row">
-        <h2>El Heroe {{nombreHeroe}}</h2>
+<div class="container-fluid">
+    <div class="container text-center text-white">
         <div class="row">
-            <div *ngFor="let foto of fotosHeroes; let i = index" class="col">
-                <app-fotos-tarjeta [foto]="foto"></app-fotos-tarjeta>
+            <h2>Fotos de {{ nombreHeroe }}</h2>
+            <div class="row">
+                <div *ngFor="let foto of fotos" class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img [src]="foto.url" class="img-fluid" alt="{{ foto.nombreHeroe }}">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
