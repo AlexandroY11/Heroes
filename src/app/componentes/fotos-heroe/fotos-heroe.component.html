@@ -1,14 +1,16 @@
 <div class="container-fluid">
-    <div class="container text-center text-white">
+    <div class="container text-white">
         <div class="row">
-            <h2>Fotos de {{ nombreHeroe }}</h2>
-            <div class="row">
-                <div *ngFor="let foto of fotos" class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img [src]="foto.url" class="img-fluid" alt="{{ foto.nombreHeroe }}">
-                    </div>
+            <h2 class="text-center">Fotos de {{ nombreHeroe }}</h2>
+            <div *ngFor="let foto of fotos" class="col">
+                <div class="card" style="width: 18rem;">
+                    <img [src]="foto.url" class="img-fluid" alt="{{ foto.nombreHeroe }}">
                 </div>
             </div>
         </div>
+        <a [routerLink]="['/heroes']" class="btn btn-danger">Regresar</a>
     </div>
 </div>
+
+
+

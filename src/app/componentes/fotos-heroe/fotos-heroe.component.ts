@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { fotosHeroe } from '../../interfaces/fotos-heroe';
 import { FotosHeroeService } from '../../services/fotos-heroe.service';
+import { RouterLink } from '@angular/router';
 import { NgFor } from '@angular/common';
 
 @Component({
   standalone: true,
-  imports:[ NgFor],
+  imports:[ NgFor, RouterLink],
   selector: 'app-fotos-heroe',
   templateUrl: './fotos-heroe.component.html',
   styleUrls: ['./fotos-heroe.component.css']
